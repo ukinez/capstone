@@ -7,20 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="controls">
+    <label for="speedSlider">Orbit Speed</label>
+    <input type="range" id="speedSlider" min="0" max="3" step="0.1" value="0">
+    <span id="speedText">1x</span>
+</div>
+
+    <div class="container">
+    <div class="sun">
+        <div id="sun"></div>
+    </div>
     
-<div class="container">
-    <div class="sun"></div>
+    <div class="mercury">
+        <div id="mercury"></div>
+    </div>
     
-    <div class="mercury"></div>
-    
-    <div class="venus"></div>
+    <div class="venus">
+        <div id="venus"></div>
+    </div>
     
     
     <div class="earth">
-        <div class="moon"></div>
+        <div id="earth"></div>
+        <div class="moon">
+            <div id="moon"></div>
+        </div>
     </div>
 
     <div class="mars">
+        <div id="mars"></div>
         <div class="phobos"></div>
         <div class="deimos"></div>
     </div>
@@ -28,20 +44,29 @@
     <div class="asteroidbelt1"></div>
     <div class="asteroidbelt2"></div>
     <div class="asteroidbelt3"></div> 
+    <div class="ceres"></div>
 
-    <div class="jupiter"></div>
+    <div class="jupiter">
+        <div id="jupiter"></div>
+    </div>
 
     <div class="saturn">
+        <div id="saturn"></div>
         <div class="srings"></div>
     </div>
 
     <div class="uranus">
+        <div id="uranus"></div>
         <div class="urings"></div>
     </div>
 
     <div class="neptune"></div>
 
     <div class="pluto"></div>
+
+    <div class="haumea"></div>
+    <div class="makemake"></div>
+    <div class="eris"></div>
 
 </div>
 <script src="script.js"></script>
