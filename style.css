@@ -1,26 +1,82 @@
 body{
 margin: 0;
 height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
+
+
+
 background-image:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/background.avif);
 background-size: cover;
+background-position: 50%;
+background-attachment: fixed;
 overflow: hidden;
-zoom: 75%;
-position:relative;
+
 }
 
-.container{
-font-size: 10px;
-width: 40em;
-height: 40em;
-position: relative;
+.viewport {
+    touch-action: none;
+}
+
+.controls {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999999;
+
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+
+    font-family: Arial, sans-serif;
+
+    touch-action: auto;
+    pointer-events: auto;
+}
+
+.controls * {
+    touch-action: auto;
+    pointer-events: auto;
+}
+
+#speedSlider {
+    width: 220px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#speedText {
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.controls input {
+    width: 150px;
 }
 
 .earth, .moon, .mercury, .venus, 
-.mars, .phobos, .deimos, .jupiter, 
-.saturn, .uranus, .neptune, .asteroidbelt{
+.mars, .phobos, .deimos, .ceres, .jupiter, 
+.saturn, .uranus, .neptune, .pluto,
+.asteroidbelt1, .asteroidbelt2, .asteroidbelt3, .haumea, .makemake, .eris {
+    animation-timing-function: linear;
+}
+
+.container{
+font-size: 0.5vh;
+width: 40em;
+height: 0em;
+position: relative;
+display:flex;
+
+
+@media screen and (min-width: 480px) {
+    font-size: 1vh;
+}
+}
+
+.earth, .moon, .mercury, .venus, 
+.mars, .phobos, .deimos, .ceres, .jupiter, 
+.saturn, .uranus, .neptune,
+.pluto, .haumea, .makemake, .eris{
 position: absolute;
 border-style: solid;
 border-color: rgb(255, 255, 255) transparent transparent transparent;
@@ -30,8 +86,9 @@ border-radius: 50%;
 
 .earth::before, .moon::before, .mercury::before,
  .venus::before, .mars::before, .phobos::before,
-  .deimos::before, .jupiter::before, .saturn::before, .srings::before,
-   .uranus::before, .urings::before, .neptune::before, .pluto::before{
+  .deimos::before, .ceres::before, .jupiter::before, .saturn::before, .srings::before,
+   .uranus::before, .urings::before, .neptune::before,
+   .pluto::before, .haumea::before, .makemake::before, .eris::before{
 content: '';
 position: absolute;
 border-radius: 50%;
@@ -47,8 +104,13 @@ height: 12em;
 border-radius: 50%;
 box-shadow: 0 0 3em rgb(235, 125, 36);
 background-image: url(images/sun.gif);
-background-position: 20.5em;
-background-size: 290px;
+background-position: 50%;
+background-size: 15vh;
+
+@media screen and (min-width: 480px) {
+    background-position: 50%;
+background-size: 30vh
+}
 }
 
 /* MERCURY */
@@ -57,7 +119,7 @@ top: 13.5em; /* PLANET OFFSET FROM CENTER */
 left:13.5em; /* PLANET OFFSET FROM CENTER*/
 width: 15em; /* ORBIT SIZE */
 height: 15em; /* ORBIT SIZE */
-animation: orbit 1.0s linear infinite; /*0.5s*/
+animation: orbit 4.0s linear infinite; /*0.5s*/
 }
 
 .mercury::before{
@@ -66,9 +128,14 @@ right: 1.5em;
 width: 1.4em; /* PLANET SIZE */
 height: 1.4em; /* PLANET SIZE */
 background-image: url(images/mercury.gif);
-background-position: 6.2em;
-background-size: 37px;
+background-position: 50%;
+background-size: 1vh;
 box-shadow: 0 0 3em rgb(167, 167, 167);
+
+@media screen and (min-width: 480px) {
+    background-position: 50%;
+background-size: 2.3vh
+}
 }
 /* VENUS */
 .venus{
@@ -76,7 +143,7 @@ top: 9.75em; /* PLANET OFFSET FROM CENTER */
 left:9.75em; /* PLANET OFFSET FROM CENTER*/
 width: 22.5em; /* ORBIT SIZE */
 height: 22.5em; /* ORBIT SIZE */
-animation: orbit 2.6s linear infinite; /*1.3s*/
+animation: orbit 10.23s linear infinite; /*1.3s*/
 }
 
 .venus::before{
@@ -85,9 +152,14 @@ right: 2em;
 width: 2.8em; /* PLANET SIZE */
 height: 2.8em; /* PLANET SIZE */
 background-image: url(images/venus.gif);
-background-position: 3.4em;
-background-size: 40px;
+background-position: 50%;
+background-size: 2.05vh;
 box-shadow: 0 0 3em rgb(252, 157, 68);
+
+@media screen and (min-width: 480px) {
+    background-position: 50%;
+background-size: 4vh
+}
 }
 
 /* EARTH */
@@ -96,7 +168,7 @@ top: 6em; /* PLANET OFFSET FROM CENTER*/
 left: 6em; /* PLANET OFFSET FROM CENTER*/
 width: 30em; /* ORBIT SIZE */
 height: 30em; /* ORBIT SIZE */
-animation: orbit 4.2s linear infinite; /*2.1s*/
+animation: orbit 16.60s linear infinite; /*2.1s*/
 }
 
 .earth::before{
@@ -105,9 +177,14 @@ right: 2.8em;
 width: 3em; /* PLANET SIZE */
 height: 3em; /* PLANET SIZE */
 background-image: url(images/earth.gif);
-background-position: -0.2em;
-background-size: 36px;
+background-position: 50%;
+background-size: 1.67vh;
 box-shadow: 0 0 3em rgb(77, 133, 255);
+
+@media screen and (min-width: 480px) {
+    background-position: 50%;
+background-size: 3.3vh
+}
 }
 
 /* MOON */
@@ -116,7 +193,7 @@ top: 2.25em; /* PLANET OFFSET FROM CENTER */
 right: 2.25em; /* PLANET OFFSET FROM CENTER */
 width: 4em; /* ORBIT SIZE */
 height: 4em; /* ORBIT SIZE */
-animation: orbit 5.4s linear infinite; /*2.7s*/
+animation: orbit 1.25s linear infinite; /*2.7s*/
 }
 
 .moon::before{
@@ -125,8 +202,13 @@ right: 0em;
 width: 1em; /* PLANET SIZE */
 height: 1em; /* PLANET SIZE */
 background-image: url(images/moon.gif);
-background-position: 1.05em;
-background-size: 10px;
+background-position: 50%;
+background-size: 0.55vh;
+
+@media screen and (min-width: 480px) {
+    background-position: 50%;
+background-size: 3.3vh
+}
 }
 
 /* MARS */
@@ -135,7 +217,7 @@ top: 2em; /* PLANET OFFSET */
 left: 2em; /* PLANET OFFSET*/
 width: 38em; /* ORBIT SIZE */
 height: 38em; /* ORBIT SIZE */
-animation: orbit 7.8s linear infinite; /*3.9s*/
+animation: orbit 31.23s linear infinite; /*3.9s*/
 }
 
 .mars::before{
@@ -144,9 +226,14 @@ right: 4.75em;
 width: 1.6em; /* PLANET SIZE */
 height: 1.6em; /* PLANET SIZE */
 background-image: url(images/mars.gif);
-background-position: -0.45em;
-background-size: 24px;
+background-position: 50%;
+background-size: 1.2vh;
 box-shadow: 0 0 3em rgb(255, 0, 0);
+
+@media screen and (min-width: 480px) {
+    background-position: 50%;
+background-size: 2.5vh;
+}
 }
 
 /* PHOBOS */
@@ -165,6 +252,11 @@ right: 0em;
 width: 0.006em; /* PLANET SIZE */
 height: 0.006em; /* PLANET SIZE */
 background-color: rgb(126, 126, 126);
+
+@media screen and (min-width: 480px) {
+    top: -1vh;
+    right: -1vh;
+}
 }
 
 /* DEIMOS */
@@ -184,53 +276,93 @@ height: 0.003em; /* PLANET SIZE */
 background-color: rgb(255, 255, 255);
 }
 
+.asteroidbelt1{
+    border-color: gray;
+    border-style: dotted;
+    top: -1vh;
+    right: -2vh;
+    width: 44em;
+    height: 44em;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: orbit 36.2s linear infinite;
+    position: absolute;
+
+    @media screen and (min-width: 480px) {
+        top: -1.5vh;
+        right: -3.5vh;
+    }
+}
+
+.asteroidbelt2{
+    border-color: gray;
+    border-style: dotted;
+    top: -1.5vh;
+    right: -2.5vh;
+    width: 46em;
+    height: 46em;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: orbit 44.2s linear infinite;
+    position: absolute;
+
+    @media screen and (min-width: 480px) {
+        top: -2.5vh;
+        right: -4.5vh;
+    }
+}
+
+.asteroidbelt3{
+    border-color: gray;
+    border-style: dotted;
+    top: -2vh;
+    right: -3vh;
+    width: 48em;
+    height: 48em;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: orbit 52.2s linear infinite;
+    position: absolute;
+
+    @media screen and (min-width: 480px) {
+        top: -3.5vh;
+        right: -5.5vh;
+    }
+}
+
+/*CERES*/
+.ceres{
+top: -3em; /* PLANET OFFSET FROM CENTER*/
+left: -2.5em; /* PLANET OFFSET FROM CENTER*/
+width: 47em; /* ORBIT SIZE */
+height: 47em; /* ORBIT SIZE */
+animation: orbit 76.36s linear infinite; /*76.36*/
+}
+
+.ceres::before{
+top: 6.25em;
+right: 6.5em;
+width: 0.8em; /* PLANET SIZE */
+height: 0.8em; /* PLANET SIZE */
+background-image: url(images/ceres.gif);
+background-position: 50%;
+background-size: 0.6vh;
+box-shadow: 0 0 3em rgb(168, 168, 168);
+
+@media screen and (min-width: 480px) {
+    background-position: 52%;
+    background-size: 1.1vh
+}
+}
+
 /*JUPITER*/
 .jupiter{
 top: -9em; /* PLANET OFFSET FROM CENTER*/
 left: -9em; /* PLANET OFFSET FROM CENTER*/
 width: 60em; /* ORBIT SIZE */
 height: 60em; /* ORBIT SIZE */
-animation: orbit 49.2s linear infinite; /*24.6s*/
+animation: orbit 197s linear infinite; /*24.6s 197*/
 }
-
-.asteroidbelt1{
-    border-color: gray;
-    border-style: dotted;
-    top: 0em;
-    right: -2em;
-    width: 42em;
-    height: 42em;
-    border-radius: 100%;
-    background-color: transparent;
-    animation: orbit 48.2s linear infinite;
-}
-
-.asteroidbelt2{
-    border:#6e6e75;
-    border-style: dotted;
-    top: -1em;
-    right: -3.5em;
-    width: 44em;
-    height: 44em;
-    border-radius: 100%;
-    background-color: transparent;
-    animation: orbit 50.2s linear infinite; 
-    position:absolute;
-}
-
-.asteroidbelt3{
-    border:#6e6e75;
-    border-style: dotted;
-    top: -2em;
-    right: -4.4em;
-    width: 46em;
-    height: 46em;
-    border-radius: 100%;
-    background-color: transparent;
-    animation: orbit 52.2s linear infinite;
-    position:absolute;
-}
-
 
 .jupiter::before{
 top: 6em;
@@ -238,9 +370,14 @@ right: 6em;
 width: 6em; /* PLANET SIZE */
 height: 6em; /* PLANET SIZE */
 background-image: url(images/jupiter.gif);
-background-position: 0em;
-background-size: 61px;
+background-position: 0%;
+background-size: 3.2vh;
 box-shadow: 0 0 3em rgb(199, 184, 155);
+
+@media screen and (min-width: 480px) {
+    background-position: 50%;
+background-size: 6vh
+}
 }
 
 /*SATURN*/
@@ -249,7 +386,7 @@ top: -16em; /* PLANET OFFSET FROM CENTER*/
 left: -16em; /* PLANET OFFSET FROM CENTER*/
 width: 74em; /* ORBIT SIZE */
 height: 74em; /* ORBIT SIZE */
-animation: orbit 122.2s linear infinite; /*61.1s*/
+animation: orbit 489.10s linear infinite; /*61.1s*/
 }
 
 .saturn::before{
@@ -258,13 +395,18 @@ right:8.5em;
 width: 5em; /* PLANET SIZE */
 height: 5em; /* PLANET SIZE */
 background-image: url(images/saturn.gif);
-background-position: -1.3em;
-background-size: 75px;
+background-position: 50%;
+background-size: 3.7vh;
 box-shadow: 0 0 3em rgb(230, 209, 172);
+
+@media screen and (min-width: 480px) {
+    background-position: 48%;
+background-size: 7.5vh
+}
 }
 
 .srings::before{
-top: 10.5em;
+top: 10.75em;
 right:6em;
 width: 10em; /* PLANET SIZE */
 height: 1em; /* PLANET SIZE */
@@ -279,7 +421,7 @@ top: -24em; /* PLANET OFFSET FROM CENTER*/
 left: -24em; /* PLANET OFFSET FROM CENTER*/
 width: 90em; /* ORBIT SIZE */
 height: 90em; /* ORBIT SIZE */
-animation: orbit 174.3s linear infinite; /*174.3s*/
+animation: orbit 1394.87s linear infinite; /*174.3s*/
 }
 
 .uranus::before{
@@ -288,9 +430,14 @@ right:11em;
 width: 4.6em; /* PLANET SIZE */
 height: 4.6em; /* PLANET SIZE */
 background-image: url(images/uranus.gif);
-background-position: -5.2em;
-background-size: 155px;
+background-position: 49%;
+background-size: 7.8vh;
 box-shadow: 0 0 3em rgb(112, 216, 235);
+
+@media screen and (min-width: 480px) {
+    background-position: 48%;
+background-size: 15.5vh
+}
 }
 
 .urings::before{
@@ -302,13 +449,14 @@ background: white;
 opacity: 10%;
 box-shadow: 0 0 3em rgb(230, 209, 172);
 }
+
 /*NEPTUNE*/
 .neptune{
 top: -32em; /* PLANET OFFSET FROM CENTER*/
 left: -32em; /* PLANET OFFSET FROM CENTER*/
 width: 105em; /* ORBIT SIZE */
 height: 105em; /* ORBIT SIZE */
-animation: orbit 684.4s linear infinite; /*342.2s*/
+animation: orbit 2735.90s linear infinite; /*342.2s, 2735.90*/
 }
 
 .neptune::before{
@@ -317,40 +465,117 @@ right:13em;
 width: 4.6em; /* PLANET SIZE */
 height: 4.6em; /* PLANET SIZE */
 background-image: url(images/neptune.gif);
-background-position: -0.2em;
-background-size: 50px;
+background-position: 50%;
+background-size: 2.5vh;
 box-shadow: 0 0 3em rgb(98, 132, 226);
+
+@media screen and (min-width: 480px) {
+    background-position: 50%;
+background-size: 5vh
+}
 }
 
 
 /* PLUTO */
 .pluto{
-position: absolute;
-border-style: solid;
-border-color: rgb(255, 255, 255) transparent transparent transparent;
-border-width: 0.1em 0.1em 0 0;
-border-radius: 50%;
-}
-
-.pluto{
 top: -35em; /* PLANET OFFSET FROM CENTER*/
 left: -62.5em; /* PLANET OFFSET FROM CENTER*/
-width: 170em; /* ORBIT SIZE */
+width: 150em; /* ORBIT SIZE */
 height: 110em; /* ORBIT SIZE */
-animation: orbit 1029.2s linear infinite; /*514.6s*/
+animation: orbit 4116.36s linear infinite; /*4116.36*/
 }
 
 .pluto::before{
-top: 19.25em;
-right: 19.25em;
+top: 18em;
+right: 18.5em;
 width: 1em; /* PLANET SIZE */
 height: 1em; /* PLANET SIZE */
 background-image: url(images/pluto.gif);
-background-position: -0.1em;
-background-size: 15px;
+background-position: 50%;
+background-size: 0.7vh;
 box-shadow: 0 0 1em rgb(218, 218, 218);
+
+@media screen and (min-width: 480px) {
+    background-position: 50%;
+background-size: 1.4vh
+}
 }
 
+.haumea{
+top: -30em; /* PLANET OFFSET FROM CENTER*/
+left: -62.5em; /* PLANET OFFSET FROM CENTER*/
+width: 160em; /* ORBIT SIZE */
+height: 115em; /* ORBIT SIZE */
+animation: orbit 4674.55s linear infinite; /*4674.55*/
+}
+
+.haumea::before{
+top: 19.25em;
+right: 19.25em;
+width: 1em; /* PLANET SIZE */
+height: 0.5em; /* PLANET SIZE */
+background-image: url(images/haumea.gif);
+background-position: 50%;
+background-size: 0.85vh;
+transform: rotate(-45deg);
+box-shadow: 0 0 1em rgb(218, 218, 218);
+
+@media screen and (min-width: 480px) {
+    background-position: 50%;
+    background-position-y: 45%;
+background-size: 1.5vh
+}
+}
+
+/* MAKEMAKE */
+.makemake{
+top: -35em; /* PLANET OFFSET FROM CENTER*/
+left: -75em; /* PLANET OFFSET FROM CENTER*/
+width: 170em; /* ORBIT SIZE */
+height: 120em; /* ORBIT SIZE */
+animation: orbit 5038.18s linear infinite; /*5038.18*/
+}
+
+.makemake::before{
+top: 20.5em;
+right: 20.5em;
+width: 0.4em; /* PLANET SIZE */
+height: 0.4em; /* PLANET SIZE */
+background-image: url(images/makemake.gif);
+background-position: 50%;
+background-size: 0.6vh;
+box-shadow: 0 0 1em rgb(218, 218, 218);
+
+@media screen and (min-width: 480px) {
+    background-position: 50%;
+background-size: 0.4vh
+}
+}
+
+/* ERIS */
+.eris{
+top: -35em; /* PLANET OFFSET FROM CENTER*/
+left: -80em; /* PLANET OFFSET FROM CENTER*/
+width: 180em; /* ORBIT SIZE */
+height: 125em; /* ORBIT SIZE */
+animation: orbit 6854.55s linear infinite; /*4116.36, 6854.55*/
+}
+
+.eris::before{
+top: 21.5em;
+right: 21.75em;
+width: 0.2em; /* PLANET SIZE */
+height: 0.2em; /* PLANET SIZE */
+background-image: url(images/eris.gif);
+background-position: 50%;
+background-size: 0.6vh;
+box-shadow: 0 0 1em rgb(218, 218, 218);
+
+@media screen and (min-width: 480px) {
+    background-position: 50%;
+background-size: 0.6vh
+}
+}
 
 
 @keyframes orbit{ 
