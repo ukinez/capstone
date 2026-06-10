@@ -23,8 +23,6 @@ display:flex;
 
 @media screen and (min-width: 320px) {
     font-size: 1vh;
-    align-items: center;
-    justify-content: center;
 }
 }
 
