@@ -21,6 +21,10 @@ overflow: hidden;
     border-radius: 10px;
 }
 
+.source a{
+    color: cornflowerblue;
+}
+
 .credit {
     position: fixed;
     bottom: 20px;
