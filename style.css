@@ -45,6 +45,11 @@ display:flex;
     font-size: 1vh;
 }
 
+@media screen and (min-width: 411px) and (max-width: 432px) {
+    font-size: 1vh;
+}
+
+
 @media screen and (min-width: 480px) {
     font-size: 1vh; 
 }
