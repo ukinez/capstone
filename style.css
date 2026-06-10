@@ -41,7 +41,7 @@ position: relative;
 display:flex;
 
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
     font-size: 1vh;
 }
 
@@ -84,11 +84,16 @@ background-image: url(images/sun.gif);
 background-position: 50%;
 background-size: 9.2vh;
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
     background-size: 30vh
 }
 
+@media screen and (min-width: 411px) and (max-width: 432px) {
+    background-position: 50%;
+    background-size: 30vh
+}
+    
 @media screen and (min-width: 480px) {
     background-position: 50%;
     background-size: 30vh
@@ -114,7 +119,12 @@ background-position: 50%;
 background-size: 0.75vh;
 box-shadow: 0 0 3em rgb(167, 167, 167);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
+    background-position: 50%;
+    background-size: 2.3vh
+}
+
+@media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
     background-size: 2.3vh
 }
@@ -143,7 +153,12 @@ background-position: 50%;
 background-size: 1.3vh;
 box-shadow: 0 0 3em rgb(252, 157, 68);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
+    background-position: 50%;
+    background-size: 4vh
+}
+
+@media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
     background-size: 4vh
 }
@@ -173,7 +188,12 @@ background-position: 50%;
 background-size: 1.2vh;
 box-shadow: 0 0 3em rgb(77, 133, 255);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
+    background-position: 50%;
+    background-size: 3.3vh
+}
+
+@media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
     background-size: 3.3vh
 }
@@ -202,7 +222,12 @@ background-image: url(images/moon.gif);
 background-position: 50%;
 background-size: 0.4vh;
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
+    background-position: 50%;
+    background-size: 3.3vh
+}
+
+@media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
     background-size: 3.3vh
 }
@@ -232,11 +257,16 @@ background-position: 50%;
 background-size: 0.9vh;
 box-shadow: 0 0 3em rgb(255, 0, 0);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
     background-size: 2.5vh;
 }
 
+@media screen and (min-width: 411px) and (max-width: 432px) {
+    background-position: 50%;
+    background-size: 2.5vh;
+}
+    
 @media screen and (min-width: 480px){
     background-position: 50%;
     background-size: 2.5vh;
@@ -260,11 +290,16 @@ width: 0.006em; /* PLANET SIZE */
 height: 0.006em; /* PLANET SIZE */
 background-color: rgb(126, 126, 126);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
     top: -1vh;
     right: -1vh;
 }
 
+@media screen and (min-width: 411px) and (max-width: 432px) {
+    top: -1vh;
+    right: -1vh;
+}
+    
 @media screen and (min-width: 480px) {
     top: -1vh;
     right: -1vh;
@@ -300,7 +335,12 @@ background-color: rgb(255, 255, 255);
     animation: orbit 36.2s linear infinite;
     position: absolute;
 
-    @media screen and (min-width: 320px) and (max-width: 360px) {
+    @media screen and (min-width: 320px) and (max-width: 393px) {
+        top: -1.5vh;
+        right: -3.5vh;
+    }
+
+    @media screen and (min-width: 411px) and (max-width: 432px) {
         top: -1.5vh;
         right: -3.5vh;
     }
@@ -323,7 +363,12 @@ background-color: rgb(255, 255, 255);
     animation: orbit 44.2s linear infinite;
     position: absolute;
 
-    @media screen and (min-width: 320px) and (max-width: 360px) {
+    @media screen and (min-width: 320px) and (max-width: 393px) {
+        top: -2.5vh;
+        right: -4.5vh;
+    }
+
+    @media screen and (min-width: 411px) and (max-width: 432px) {
         top: -2.5vh;
         right: -4.5vh;
     }
@@ -346,7 +391,12 @@ background-color: rgb(255, 255, 255);
     animation: orbit 52.2s linear infinite;
     position: absolute;
 
-    @media screen and (min-width: 320px) and (max-width: 360px) {
+    @media screen and (min-width: 320px) and (max-width: 393px) {
+        top: -3.5vh;
+        right: -5.5vh;
+    }
+
+    @media screen and (min-width: 411px) and (max-width: 432px) {
         top: -3.5vh;
         right: -5.5vh;
     }
@@ -376,7 +426,12 @@ background-position: 50%;
 background-size: 0.4vh;
 box-shadow: 0 0 3em rgb(168, 168, 168);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
+    background-position: 52%;
+    background-size: 1.1vh
+}
+
+@media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 52%;
     background-size: 1.1vh
 }
@@ -406,7 +461,12 @@ background-position: 50%;
 background-size: 2vh;
 box-shadow: 0 0 3em rgb(199, 184, 155);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
+    background-position: 50%;
+    background-size: 6vh
+}
+
+@media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
     background-size: 6vh
 }
@@ -436,11 +496,16 @@ background-position: 50%;
 background-size: 2.5vh;
 box-shadow: 0 0 3em rgb(230, 209, 172);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 48%;
     background-size: 7.5vh
 }
 
+@media screen and (min-width: 411px) and (max-width: 432px) {
+    background-position: 48%;
+    background-size: 7.5vh
+}
+    
 @media screen and (min-width: 480px) {
     background-position: 48%;
     background-size: 7.5vh
@@ -476,11 +541,16 @@ background-position: 49%;
 background-size: 5vh;
 box-shadow: 0 0 3em rgb(112, 216, 235);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 48%;
     background-size: 15.5vh
 }
 
+@media screen and (min-width: 411px) and (max-width: 432px) {
+    background-position: 48%;
+    background-size: 15.5vh
+}
+    
 @media screen and (min-width: 480px) {
     background-position: 48%;
     background-size: 15.5vh
@@ -516,7 +586,12 @@ background-position: 50%;
 background-size: 1.6vh;
 box-shadow: 0 0 3em rgb(98, 132, 226);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
+    background-position: 50%;
+    background-size: 5vh
+}
+
+@media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
     background-size: 5vh
 }
@@ -547,7 +622,12 @@ background-position: 50%;
 background-size: 0.45vh;
 box-shadow: 0 0 1em rgb(218, 218, 218);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
+    background-position: 50%;
+    background-size: 1.4vh
+}
+
+@media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
     background-size: 1.4vh
 }
@@ -577,7 +657,13 @@ background-size: 0.6vh;
 transform: rotate(-45deg);
 box-shadow: 0 0 1em rgb(218, 218, 218);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
+    background-position: 50%;
+    background-position-y: 45%;
+    background-size: 1.5vh
+}
+
+@media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
     background-position-y: 45%;
     background-size: 1.5vh
@@ -609,7 +695,12 @@ background-position: 50%;
 background-size: 0.2vh;
 box-shadow: 0 0 1em rgb(218, 218, 218);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
+    background-position: 50%;
+    background-size: 0.4vh
+}
+
+@media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
     background-size: 0.4vh
 }
@@ -639,11 +730,16 @@ background-position: 50%;
 background-size: 0.25vh;
 box-shadow: 0 0 1em rgb(218, 218, 218);
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
     background-size: 0.6vh
 }
 
+@media screen and (min-width: 411px) and (max-width: 432px) {
+    background-position: 50%;
+    background-size: 0.6vh
+}
+    
 @media screen and (min-width: 480px) {
     background-position: 50%;
     background-size: 0.6vh
@@ -653,13 +749,13 @@ box-shadow: 0 0 1em rgb(218, 218, 218);
 
 @keyframes orbit{ 
     to {
-transform: rotate(360deg);
+transform: rotate(393deg);
     }
 }
 
 @keyframes counterorbit{ 
     to {
-transform: rotate(-360deg);
+transform: rotate(-393deg);
     }
 }
 
