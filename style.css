@@ -49,7 +49,6 @@ display:flex;
     font-size: 1vh;
 }
 
-
 @media screen and (min-width: 480px) {
     font-size: 1vh; 
 }
@@ -91,12 +90,12 @@ background-size: 9.2vh;
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
-    background-size: 30vh
+    background-size: 30vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
-    background-size: 30vh
+    background-size: 30vh;
 }
     
 @media screen and (min-width: 480px) {
@@ -126,12 +125,12 @@ box-shadow: 0 0 3em rgb(167, 167, 167);
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
-    background-size: 2.3vh
+    background-size: 2.3vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
-    background-size: 2.3vh
+    background-size: 2.3vh;
 }
 
 @media screen and (min-width: 480px) {
@@ -160,17 +159,17 @@ box-shadow: 0 0 3em rgb(252, 157, 68);
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
-    background-size: 4vh
+    background-size: 4vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
-    background-size: 4vh
+    background-size: 4vh;
 }
 
 @media screen and (min-width: 480px) {
     background-position: 50%;
-    background-size: 4vh
+    background-size: 4vh;
 }
 }
 
@@ -195,17 +194,17 @@ box-shadow: 0 0 3em rgb(77, 133, 255);
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
-    background-size: 3.3vh
+    background-size: 3.3vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
-    background-size: 3.3vh
+    background-size: 3.3vh;
 }
 
 @media screen and (min-width: 480px) {
     background-position: 50%;
-    background-size: 3.3vh
+    background-size: 3.3vh;
 }
 }
 
@@ -229,17 +228,17 @@ background-size: 0.4vh;
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
-    background-size: 3.3vh
+    background-size: 3.3vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
-    background-size: 3.3vh
+    background-size: 3.3vh;
 }
 
 @media screen and (min-width: 480px) {
     background-position: 50%;
-    background-size: 3.3vh
+    background-size: 3.3vh;
 }
 }
 
@@ -433,12 +432,12 @@ box-shadow: 0 0 3em rgb(168, 168, 168);
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 52%;
-    background-size: 1.1vh
+    background-size: 1.1vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 52%;
-    background-size: 1.1vh
+    background-size: 1.1vh;
 }
     
 @media screen and (min-width: 480px){
@@ -468,17 +467,17 @@ box-shadow: 0 0 3em rgb(199, 184, 155);
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
-    background-size: 6vh
+    background-size: 6vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
-    background-size: 6vh
+    background-size: 6vh;
 }
 
 @media screen and (min-width: 480px) {
     background-position: 50%;
-    background-size: 6vh
+    background-size: 6vh;
 }
 }
 
@@ -503,17 +502,17 @@ box-shadow: 0 0 3em rgb(230, 209, 172);
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 48%;
-    background-size: 7.5vh
+    background-size: 7.5vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 48%;
-    background-size: 7.5vh
+    background-size: 7.5vh;
 }
     
 @media screen and (min-width: 480px) {
     background-position: 48%;
-    background-size: 7.5vh
+    background-size: 7.5vh;
 }
 }
 
@@ -548,17 +547,17 @@ box-shadow: 0 0 3em rgb(112, 216, 235);
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 48%;
-    background-size: 15.5vh
+    background-size: 15.5vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 48%;
-    background-size: 15.5vh
+    background-size: 15.5vh;
 }
     
 @media screen and (min-width: 480px) {
     background-position: 48%;
-    background-size: 15.5vh
+    background-size: 15.5vh;
 }
 }
 
@@ -593,17 +592,17 @@ box-shadow: 0 0 3em rgb(98, 132, 226);
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
-    background-size: 5vh
+    background-size: 5vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
-    background-size: 5vh
+    background-size: 5vh;
 }
 
 @media screen and (min-width: 480px) {
     background-position: 50%;
-    background-size: 5vh
+    background-size: 5vh;
 }
 }
 
@@ -629,17 +628,17 @@ box-shadow: 0 0 1em rgb(218, 218, 218);
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
-    background-size: 1.4vh
+    background-size: 1.4vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
-    background-size: 1.4vh
+    background-size: 1.4vh;
 }
 
 @media screen and (min-width: 480px) {
     background-position: 50%;
-    background-size: 1.4vh
+    background-size: 1.4vh;
 }
 }
 
@@ -665,19 +664,19 @@ box-shadow: 0 0 1em rgb(218, 218, 218);
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
     background-position-y: 45%;
-    background-size: 1.5vh
+    background-size: 1.5vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
     background-position-y: 45%;
-    background-size: 1.5vh
+    background-size: 1.5vh;
 }
 
 @media screen and (min-width: 480px) {
     background-position: 50%;
     background-position-y: 45%;
-    background-size: 1.5vh
+    background-size: 1.5vh;
 }
 }
 
@@ -702,17 +701,17 @@ box-shadow: 0 0 1em rgb(218, 218, 218);
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
-    background-size: 0.4vh
+    background-size: 0.4vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
-    background-size: 0.4vh
+    background-size: 0.4vh;
 }
 
 @media screen and (min-width: 480px) {
     background-position: 50%;
-    background-size: 0.4vh
+    background-size: 0.4vh;
 }
 }
 
@@ -737,30 +736,30 @@ box-shadow: 0 0 1em rgb(218, 218, 218);
 
 @media screen and (min-width: 320px) and (max-width: 393px) {
     background-position: 50%;
-    background-size: 0.6vh
+    background-size: 0.6vh;
 }
 
 @media screen and (min-width: 411px) and (max-width: 432px) {
     background-position: 50%;
-    background-size: 0.6vh
+    background-size: 0.6vh;
 }
     
 @media screen and (min-width: 480px) {
     background-position: 50%;
-    background-size: 0.6vh
+    background-size: 0.6vh;
 }
 }
 
 
 @keyframes orbit{ 
     to {
-transform: rotate(393deg);
+transform: rotate(360deg);
     }
 }
 
 @keyframes counterorbit{ 
     to {
-transform: rotate(-393deg);
+transform: rotate(-360deg);
     }
 }
 
