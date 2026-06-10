@@ -41,7 +41,7 @@ position: relative;
 display:flex;
 
 
-@media screen and (min-width: 320px) and (max-width: 392px) {
+@media screen and (min-width: 320px) and (max-width: 360px) {
     font-size: 1vh;
 }
 
@@ -699,7 +699,7 @@ background-position: 50%;
 background-size: 0.2vh;
 box-shadow: 0 0 1em rgb(218, 218, 218);
 
-@media screen and (min-width: 320px) and (max-width: 392px) {
+@media screen and (min-width: 320px) and (max-width: 360px) {
     background-position: 50%;
     background-size: 0.4vh;
 }
@@ -734,7 +734,7 @@ background-position: 50%;
 background-size: 0.25vh;
 box-shadow: 0 0 1em rgb(218, 218, 218);
 
-@media screen and (min-width: 320px) and (max-width: 392px) {
+@media screen and (min-width: 320px) and (max-width: 360px) {
     background-position: 50%;
     background-size: 0.6vh;
 }
